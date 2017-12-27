@@ -1,0 +1,277 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    height: 662px;
+    overflow: hidden;
+}
+
+.container .right-side{
+    z-index:10;
+    position: absolute;
+    background-color: #ffffff;
+    opacity: 0.9;
+    box-shadow: 10px 0px #33333365;
+    height: 100%;
+    width: 23%;   
+    font-family: 'Quicksand',sans-serif;
+}
+
+.container .right-side form{
+    padding-left: 16px;
+    padding-top: 20px;
+    color: #03A9F4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 70%;
+}
+
+.container .right-side form .form-title h2{
+    font-size: 20px;
+    font-weight: 900;
+
+}
+
+.container .right-side form .form-title label{
+    font-style: italic;
+    font-family: 'Lato',sans-serif;
+}
+
+.container .right-side form div button:hover{
+    box-shadow: 2px 2px #0288D165;
+    transition: box-shadow 0.5s ease;
+    -webkit-box-shadow:box-shadow 0.5s ease;
+    -webkit-transition: box-shadow 0.5s ease;;
+    -moz-transition: box-shadow 0.5s ease;
+    -moz-box-shadow:box-shadow 0.5s ease;
+}
+
+.container .right-side form div button{
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 15px;
+    background-color: #0288D1;
+    color: #fff;
+}
+
+.container .right-side form .form-group{
+    margin-top: 35px;
+}
+
+.container .right-side form .form-group label{
+    font-size: 12px;
+}
+
+.container .right-side form div input{
+    border-style: none;
+    background: transparent;
+    padding: 8px;
+    border-bottom:2px solid #40C4FF;
+    width: 100%;
+    color: #333;
+}
+
+.container .right-side form input:focus{
+    padding: 16px;
+    transition: padding 0.5s;
+    -webkit-transition: padding 0.5s;
+    -moz-transition: padding 0.5s;
+    color: rgba(69, 23, 235, 0.705);
+}
+
+.container .right-side form input:not(:focus){
+    padding: 8px;
+    transition: padding 0.5s;
+    -webkit-transition: padding 0.5s;
+    -moz-transition: padding 0.5s;
+}
+
+.container .left-side{
+    width: 100%;
+    height: 100%;
+}
+
+.container .left-side .background img{
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+}
+
+.container .left-side .background-color{
+    background-color: #03A9F4;
+    opacity: 0.7;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.container .left-side .title {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #ffffff;
+    font-family:'Quicksand',sans-serif;
+
+}
+
+.container .left-side .title h2{
+    text-transform: uppercase;
+}
+
+::-webkit-input-placeholder{
+    color: #0288D1;
+    font-family: 'Quicksand',sans-serif;
+    font-size: 12px;
+}
+
+::-moz-placeholder{
+    color: #0288D1;
+    font-family: 'Quicksand',sans-serif;
+    font-size: 12px;
+}
+
+@media only screen and (max-width:638px) {
+        .container{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .container .right-side{
+            width: 100%;
+            position: absolute;
+            height: 100%;
+        }
+
+        .container .right-side form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding:0;
+        }
+
+        .container .left-side{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        .container .left-side .title{
+            visibility: hidden;
+        }
+
+        .container .left-side .background{
+            width: 100%;
+            background-size: cover;
+            height: 100%;
+        }
+
+        .container .right-side form input:focus{
+            padding: 14px;
+            transition: padding 0.5s;
+            -webkit-transition: padding 0.5s;
+            -moz-transition: padding 0.5s;
+            color: rgba(69, 23, 235, 0.705);
+        }
+        
+        .container .right-side form input:not(:focus){
+            padding: 8px;
+            transition: padding 0.5s;
+            -webkit-transition: padding 0.5s;
+            -moz-transition: padding 0.5s;
+        }
+
+        .container .left-side .background img{
+            width: 100%;
+            background-size: cover;
+            height: 100%;
+        }
+        
+}
+
+@media only screen and (max-width:1024px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+    }
+
+    .container .right-side{
+        width: 100%;
+        position: absolute;
+        height: 100%;
+    }
+
+    .container .left-side .background img{
+        width: 100%;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .container .right-side form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:0;
+        margin-top: 50px;
+    }
+
+    .container .left-side{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+
+    .container .left-side .title{
+        visibility: hidden;
+    }
+
+    .container .left-side .background{
+        width: 100%;
+        background-size: cover;
+        height: 100%;
+    }
+
+    .container .right-side form input:focus{
+        padding: 14px;
+        transition: padding 0.5s;
+        -webkit-transition: padding 0.5s;
+        -moz-transition: padding 0.5s;
+        color: rgba(69, 23, 235, 0.705);
+    }
+    
+    .container .right-side form input:not(:focus){
+        padding: 8px;
+        transition: padding 0.5s;
+        -webkit-transition: padding 0.5s;
+        -moz-transition: padding 0.5s;
+    }
+    
+    .container .right-side form div button{
+        margin-top: 25px;
+        margin-left: 15px;
+    }
+}
